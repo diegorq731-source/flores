@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    overflow:hidden;
+    height:100vh;
+    position:relative;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.overlay{
+    position:absolute;
+    z-index:100;
+    width:100%;
+    text-align:center;
+    top:25%;
+}
+
+h1{
+    color:#ffd700;
+    font-size:5rem;
+    text-shadow:
+        0 0 10px #ffd700,
+        0 0 20px #ffd700,
+        0 0 50px #ffd700;
+}
+
+h2{
+    color:white;
+    margin-top:15px;
+}
+
+.particula{
+    position:absolute;
+    border-radius:50%;
+    background:#ffe600;
+    box-shadow:
+        0 0 10px #ffe600,
+        0 0 20px #ffe600,
+        0 0 40px #ffe600;
+    animation:flotar linear infinite;
+}
+
+.flor{
+    position:absolute;
+    bottom:0;
+    font-size:28px;
+    filter:drop-shadow(0 0 12px gold);
+}
+
+@keyframes flotar{
+    from{
+        transform:translateY(100vh);
+    }
+
+    to{
+        transform:translateY(-100px);
+    }
+}
